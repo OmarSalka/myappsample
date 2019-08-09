@@ -1,0 +1,26 @@
+Commands:
+	- touch index.html : creates an html file in our selected file directory
+	- pwd: print working directory
+	- git init: intializes a local empty git repository
+	- git config --global user.name 'Omar Salka'
+	- git config --global user.email 'omarsalka9@gmail.com'
+	- git add index.html: adding index.html file to our git repository
+
+* the staging area is where you can see what files have changes that have yet to be commited, you 
+  can also remove the file from the staging area to no longer track the changes as well as add files to it
+
+	- git status: to see what's in the staging area
+	- git rm --cached index.html: removes the file from the staging area
+	- git add *.html: adds all html files
+	- git add . : adds all files
+
+* when saving a change to a file while it's existent in the staging area it'll indicate that when using 'git status'
+
+To commit changes ( 2 ways ) :
+
+	> The not recommended way:
+		- git commit: open a vim editor
+		- hit 'i' to enter INSERT MODE
+		- uncomment Initial commit by removing the '#'
+		- hit Esc (the escape key)
+		- type ':wq'
